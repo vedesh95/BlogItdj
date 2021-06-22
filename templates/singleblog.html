@@ -6,10 +6,11 @@
         <div class="container text-center mt-5">
             {% for i in posts%}
                 <img src="{{i.img_url}}" style="width: 300px; height: 250px;" alt="blogImage">
-                <h4>{{i.title}}</h4>
-                <p style="word-break: break-all;">{{i.description}}</p>
-                <p><small>- By {{i.username}}</small></p>
-                <p><small>{{i.date_written}}</small></p>
+                <h6 class="card-text">{{i.title}}</h6>
+                <p class="card-text text-break">{{i.description}}</p>
+        
+                <p class="card-text"><small>- By {{i.username}}</small></p>
+                <p class="card-text"><small>{{i.date_written}}</small></p>
             {% endfor %}
         </div>
     </div>

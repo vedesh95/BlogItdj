@@ -31,8 +31,8 @@
             <div class="card shadow-sm">
               <img src="{{i.img_url}}" alt="" style="height: 225px;">
               <div class="card-body">
-                <h6>{{i.title}}</h6>
-                <p style="word-break: break-all;"><small>{{i.description |slice:"0:113"}}...<a href="singleblog/{{i.id}}/">Read More</a></small></p>
+                <h6 class="card-text">{{i.title}}</h6>
+                <p class="card-text text-break"><small>{{i.description |slice:"0:84"}}...</small></p>
                 <hr>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
